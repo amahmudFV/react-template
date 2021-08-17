@@ -6,7 +6,7 @@ module.exports = {
   mode: "development",
   watch: true,
   output: {
-	path: path.resolve(__dirname, 'static'),
+	path: path.resolve(__dirname, 'dist'),
 	//path: path.resolve(__dirname, 'lib/dq_template/v1/static'),
 	filename: 'bundle.js'
   },
