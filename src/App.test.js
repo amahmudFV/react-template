@@ -1,9 +1,10 @@
 import React from 'react';
 import App from './App';
 import {render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
-test("Test", () => {
+test("Title", () => {
     render(<App />)
-    const title = document.querySelector('#title');
-    expect(title.innerHTML).toEqual("React Template");
+    const title = screen.getByText("React Template")
+    expect(title).toBeInTheDocument();
 });
