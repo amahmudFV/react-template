@@ -10,6 +10,9 @@ module.exports = {
 	//path: path.resolve(__dirname, 'lib/dq_template/v1/static'),
 	filename: 'bundle.js'
   },
+  devServer: {
+    contentBase: './dist',
+  },
   module: {
     rules: [
       {
